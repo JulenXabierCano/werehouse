@@ -38,7 +38,7 @@ public class AlmacenAPP {
 				
 				break;
 			case REALIZAR_COMPRA:
-				JOptionPane.showMessageDialog(null, "pito");
+				JOptionPane.showMessageDialog(null, "compra");
 				break;
 			case VER_ART_SALUDABLES:
 				String listaSaludables="Articulos saludables:\n";
