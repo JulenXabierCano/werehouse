@@ -31,33 +31,34 @@ public class AlmacenAPP {
 				int numeroArticulo;
 				Factura factura = new Factura();
 				LineaFactura linea = new LineaFactura();
-				
+
 				numeroArticulo = Integer.parseInt(
 						JOptionPane.showInputDialog(null, "Introduzca número del artículo a añadir a la factura"));
-				
-				
+
 				break;
 			case REALIZAR_COMPRA:
 				JOptionPane.showMessageDialog(null, "compra");
 				break;
 			case VER_ART_SALUDABLES:
-				String listaSaludables="Articulos saludables:\n";
-				for(int i = 0;i<datos.size();i++) {
-					if(datos.get(i).saludable())
-						listaSaludables+=datos.get(i).getCodigo()+" - "+datos.get(i).getNombre()+" - "+datos.get(i).getMarca()+"\n ";
+				String listaSaludables = "Articulos saludables:\n";
+				for (int i = 0; i < datos.size(); i++) {
+					if (datos.get(i).saludable())
+						listaSaludables += datos.get(i).getCodigo() + " - " + datos.get(i).getNombre() + " - "
+								+ datos.get(i).getMarca() + "\n ";
 				}
 				JOptionPane.showMessageDialog(null, listaSaludables);
 				break;
 			case VER_ART_MAS_CARO:
-				String articuloMasCaro="El articulo más caro es:\n";
-				int caro=0;
-				for(int i = 1;i<datos.size();i++) {
-					if (datos.get(i).getPrecio()>datos.get(caro).getPrecio()) {
-						caro=i;
+				String articuloMasCaro = "El articulo más caro es:\n";
+				int caro = 0;
+				for (int i = 1; i < datos.size(); i++) {
+					if (datos.get(i).getPrecio() > datos.get(caro).getPrecio()) {
+						caro = i;
 					}
 				}
-				
-				articuloMasCaro+=datos.get(caro).getCodigo()+" - "+datos.get(caro).getNombre()+" - "+datos.get(caro).getMarca()+" - "+datos.get(caro).getPrecio()+"€";
+
+				articuloMasCaro += datos.get(caro).getCodigo() + " - " + datos.get(caro).getNombre() + " - "
+						+ datos.get(caro).getMarca() + " - " + datos.get(caro).getPrecio() + "€";
 				JOptionPane.showMessageDialog(null, articuloMasCaro);
 				break;
 			case VER_ART_MENOS_STOCK_10:
