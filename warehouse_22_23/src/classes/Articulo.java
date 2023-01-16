@@ -20,10 +20,8 @@ public abstract class Articulo {
 		
 	}
 	
-	public boolean saludable() {
-		boolean saludable=false;
-		
-		return saludable;
+	public boolean saludable() {		
+		return false;
 	}
 	
 	public void precioTotal() {
