@@ -1,0 +1,3 @@
+111:vino:torres:1:51.75:13:blanco:españa:2018:chardonnay:13.5
+222:refresco:don simon:2:2.5:4:melocoton:true:false:1
+333:cerveza:heineken:1:2.8:1:paises bajos:0.5:cebada/maes
